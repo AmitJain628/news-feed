@@ -4,7 +4,6 @@ jobs:
     docker:
       - image: circleci/node:12.9.1-browsers
   
-    working_directory: ~/repo
 steps:
       - checkout
       
@@ -21,5 +20,4 @@ steps:
           - ~/.npm 
           - ~/.cache
         key: v1-dependencies-{{ checksum "package.json" }}
-    
-      - run: yarn test
+ 
