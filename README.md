@@ -1,66 +1,58 @@
-# React Redux Server Side Rendering with React Router Version 4
+# HackerNews
 
-This project is a boilerplate created for use with React Redux and expressjs. It is designed to work with version 4 of react router. This implements server side rendering but at this stage does not use code splitting. Its aim is to improve SEO and can be used as a teaching aid to how react router implements its server render methods.
+## Available Scripts
 
-## Project View
+In the project directory, you can run:
 
-![](./public/image10.png)
+### `npm start`
 
-```bash
-git clone 
-cd into folder
-npm install
-npm start opens development React Server Port 3000
-```
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Build React Project
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-To run the project from the server in a server side render mode you are required to build your project as illustrated below.
+### `npm test`
 
-```bash
-npm run build
-```
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Run Node Express Server
+### `npm run build`
 
-Once the build process is complete run the script below to serve your rendered React Redux project from Express.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```bash
-npm run server - Port 8080
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-***This servers a rendered React Project from build files***
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Production
-```bash
-npm run production
-```
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Acknowledgements
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-[Ben Lu](https://medium.com/@benlugit)
+### Code Splitting
 
-This project was Created with [Create React App](https://github.com/facebookincubator/create-react-app).
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-This project was bootstrapped with [Bootstrap](http://getbootstrap.com/).
+### Analyzing the Bundle Size
 
-The server was Scaffolded with [Express Generator](https://expressjs.com/en/starter/generator.html) 
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
+### Making a Progressive Web App
 
-For further information please refer to the links below
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-## Links 
+### Advanced Configuration
 
-[React Server Rendering Docs](https://reacttraining.com/react-router/web/guides/server-rendering)
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-[React Router Version 4](https://reacttraining.com/react-router/)
+### Deployment
 
-[Create React App](https://github.com/facebookincubator/create-react-app)
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-[Express js Server](https://expressjs.com/)
+### `npm run build` fails to minify
 
-[Redux docs](http://redux.js.org/docs/introduction/)
-
-[Redux with React Router](http://redux.js.org/docs/advanced/UsageWithReactRouter.html)
-
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

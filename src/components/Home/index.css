@@ -1,0 +1,32 @@
+.grid-container {
+    background-color: rgb(243, 239, 232);
+    display: grid;
+    grid-template-columns: 50px minmax(auto , 500px) 50px;
+    padding: 10px 0px;    
+}
+
+.grid-container-dark {
+    background-color: rgb(223, 219, 212);
+}
+
+.grid-item a  {
+    color: black !important;
+    text-decoration:none !important;
+}
+
+.grid-item span {
+    margin-right: 5px;
+}
+
+.news-text-grey {
+    font-size: 10px;
+    color: grey;
+}
+
+.news-author {
+    font-size: 12px;
+}
+
+.load-more {
+    padding: 10px 0;
+}

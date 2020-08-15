@@ -1,53 +1,58 @@
 {
-  "name": "ssr_react_redux_express",
-  "version": "1.0.0",
+  "name": "hacker_news",
+  "version": "0.1.0",
   "private": true,
-  "author": {
-    "name": "Jason Williams",
-    "email": "jwill9999@icloud.com"
-  },
   "dependencies": {
-    "babel-register": "^6.24.1",
-    "body-parser": "~1.17.1",
-    "compression": "^1.7.0",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.3",
-    "express": "~4.15.2",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/register": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "express": "^4.17.1",
     "ignore-styles": "^5.0.1",
-    "jade": "~1.11.0",
-    "morgan": "~1.8.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-redux": "^5.0.5",
-    "react-router-dom": "^4.1.2",
-    "redux": "^3.7.2",
-    "serve-favicon": "~2.4.2"
-  },
-  "devDependencies": {
-    "react-scripts": "1.0.10"
+    "isomorphic-unfetch": "^3.0.0",
+    "lodash": "^4.17.15",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "2.0.5",
+    "pretty": "^2.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.1.2",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "source-map-explorer": "^2.4.2"
   },
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "dev": "npm-run-all --parallel start start:server",
     "start": "react-scripts start",
-    "server": "start http://localhost:8080&SET NODE_ENV=development&nodemon ./server/bin/www ",
-    "production": "SET NODE_ENV=production&nodemon server/index.js",
+    "start:server": "node server/bootstrap.js",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jwill9999/ssr_react_redux_express.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "description": "React Redux Express Server side rendering using Create React App and React Router version 4",
-  "keywords": [
-    "react",
-    "redux",
-    "express",
-    "reacr router",
-    "version 4",
-    "server side rendering",
-    "seo",
-    "create react app",
-    "expresjs"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

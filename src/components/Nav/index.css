@@ -1,0 +1,23 @@
+.nav {
+    overflow: hidden;
+    background-color: #ff742b;
+}
+
+.nav span.logo {
+    background-image: url('/favicon.png');
+    background-size: cover;
+    padding: 20px;
+}
+
+.nav span {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav .selected {
+    color: black;
+}
