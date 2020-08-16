@@ -2,7 +2,7 @@ import 'isomorphic-unfetch';
 import express from 'express';
 import serverRenderer from './middleware/renderer';
 
-const PORT = 8080;
+const PORT = process.env.PORT;
 const path = require('path');
 
 // Initialize the application and create the router
