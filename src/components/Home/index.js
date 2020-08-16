@@ -16,6 +16,7 @@ import './index.css';
 const Home = ({ news, fetchTopNews, fetchRecentNews, upvoteNews, hideNews }) => {
 
     useEffect(() => {
+        console.log('use effect calling')
         news.type === FETCH_RECENT_NEWS ? fetchRecentNews() : fetchTopNews();
     }, [news.type, fetchTopNews, fetchRecentNews]);
 
@@ -47,7 +48,7 @@ const renderNewsItem = (newsItem, index, actions) => {
         <div className={clazz} key={index}>
             <div className="grid-item">
                 {newsItem.points}
-                <span onClick={() => actions.upvoteNews(newsItem.objectID)}>
+                <span onClick={() => actions.upvoteNews(newsItem.objectID, newsItem.points)}>
                     <img alt="upvote" src="/arrow.png" width="10px" style={{ marginLeft: "5px" }} />
                 </span>
             </div>
